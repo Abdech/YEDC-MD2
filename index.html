@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <style>
         #map {
-            width: 1093px;
+            width: 100%;
             height: 540px;
         }
         </style>
@@ -19,6 +19,35 @@
     <body>
         <div id="map">
         </div>
+
+        <main>
+            <nav>
+                <div class="logo">
+                   <a href="https://www.yedc.com.ng/" target="_blank">
+                     <img src="/images/logo.png">
+                </a>
+                    <p>
+                        
+                    </p>
+                </div>  
+                
+                <div class="legend">
+                 
+                   <div class="main-legend">
+                    <div>
+                        <img src="legend/Meters_MD2_1.png" alt="">
+                    </div>
+                    <p>Meters_MD2</p>
+                   </div>
+                    <div class="description">
+                        <h5>
+                            This map shows all the Meters that are in Jimeta and Yola.
+                        </h5>
+                    </div>
+                </div>
+              
+            </nav>
+        </main>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/leaflet.rotatedMarker.js"></script>
@@ -120,5 +149,7 @@
         map.addLayer(layer_Meters_MD2_1);
         setBounds();
         </script>
+
+    
     </body>
 </html>
